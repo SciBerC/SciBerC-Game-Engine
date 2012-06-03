@@ -1,0 +1,60 @@
+﻿TODO List, Created on the 3/6/2012
+
+Main			- Check State ✗
+				- Loading State ✗
+				- Menu State ✓
+				- Game State ✓
+				- Pause State ✗
+
+State			- Run ✓
+				- Poll Event ✓
+				- Update ✓
+				- Render ✓
+			
+LoadingState : State ✗
+
+MenuState : State ✓
+
+GameState : State ✓
+
+PauseState : State ✗
+				- LevelCondition ✗
+
+Level : State ✗
+				- LevelState ✗
+				- LevelList ✗
+
+LevelTest : Level ✗
+
+Object			- Position ✗
+				- Speed ✗
+				- Velocity ✗
+				- Texture ✗
+				- Solid ✗
+			
+ObjectManager 	- ObjectList ✗
+
+Item			- Type ✗
+				- Texture ✗
+				- Info ✗
+				- Ammount ✗
+			
+ItemManager		- Item List ✗
+
+Sound			- Volume ✗
+				- Sound ✗
+
+SoundManager	- AudioList ✗
+
+The following features will be added in a distant future.
+
+Network			- Connect ✗
+				- SendPacket1 ✗
+				- SendPacket2 ✗
+				- SendPacket3 ✗
+				- Disconnect ✗
+
+Misc - Encrypter - ? ✗
+Misc - Decrypter - ? ✗
+Misc - Physics - ? ✗
+				
