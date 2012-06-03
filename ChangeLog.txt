@@ -1,0 +1,17 @@
+Version 0.1 | | Release Date 3/6/2012
+=====================================
+		// Files: Name.type
+Added - Files: main.cpp, main.h, State.cpp, State.h, GameState.cpp, GameState.hpp, MenuState.cpp, MenuState.hpp.
+		// Folders: Directory/dir
+		Folders: include/States and src/States.
+		// Features: File.type - Feature // Comment about it.
+		Features:
+			main.cpp - Switch(State) // In this switch statement it looks for the corrosponding value and returns a state
+			State.cpp - Run() // This function runs the following; PollEvent, Update and Render, Run also returns a int.
+			State.cpp - PollEvent() // PollEvent is where all user related events happen, eg. User presses escape the game goes into a pause state.
+			State.cpp - Update() // this is where all game logic occurs eg Player moves the coords of the player will be updated here.
+			State.cpp - Render() // This is where all graphiocs are drawn. This is Rather self explainitory.
+		
+		// Note that GameState and MenuState are children of State and share very similar traits.
+Removed
+Modified
