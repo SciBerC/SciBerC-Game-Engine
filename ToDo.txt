@@ -5,6 +5,7 @@ Main			- Check State ✗
 				- Menu State ✓
 				- Game State ✓
 				- Pause State ✗
+				- Level State ✓
 
 State			- Run ✓
 				- Poll Event ✓
@@ -20,11 +21,11 @@ GameState : State ✓
 PauseState : State ✗
 				- LevelCondition ✗
 
-Level : State ✗
-				- LevelState ✗
+Level : State ✓
+				- LevelState ✓
 				- LevelList ✗
 
-LevelTest : Level ✗
+LevelTest : Level ✓
 
 Object			- Position ✗
 				- Speed ✗
