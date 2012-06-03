@@ -1,18 +1,19 @@
-#ifndef GAMESTATE_HPP
-#define GAMESTATE_HPP
+#ifndef LEVEL_H
+#define LEVEL_H
+
 #include <SFML/Graphics.hpp>
-#include "../State.h"
 
 namespace SC
 {
-    class GameState : public State
+    class Level
     {
         public:
-            GameState(sf::RenderWindow* Window);
-            virtual ~GameState();
+            Level(sf::RenderWindow* Window);
+            virtual ~Level();
             int iState;
             int levelState;
             int Run();
+            //void Keyboard();
         protected:
         private:
             sf::RenderWindow* Window;
@@ -21,4 +22,4 @@ namespace SC
             void Render();
     };
 }
-#endif // GAMESTATE_HPP
+#endif // LEVEL_H

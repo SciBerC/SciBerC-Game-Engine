@@ -1,15 +1,15 @@
-#ifndef GAMESTATE_HPP
-#define GAMESTATE_HPP
+#ifndef LEVELTEST_HPP
+#define LEVELTEST_HPP
+#include "../Level.h"
 #include <SFML/Graphics.hpp>
-#include "../State.h"
 
 namespace SC
 {
-    class GameState : public State
+    class LevelTest : public Level
     {
         public:
-            GameState(sf::RenderWindow* Window);
-            virtual ~GameState();
+            LevelTest(sf::RenderWindow* Window);
+            virtual ~LevelTest();
             int iState;
             int levelState;
             int Run();
@@ -21,4 +21,4 @@ namespace SC
             void Render();
     };
 }
-#endif // GAMESTATE_HPP
+#endif // LEVELTEST_HPP
