@@ -1,28 +1,27 @@
-#include "../../include/States/GameState.hpp"
+#include "../../include/Levels/LevelTest.hpp"
 
 using namespace SC;
-GameState::GameState(sf::RenderWindow* Window) : State(Window)
+LevelTest::LevelTest(sf::RenderWindow* Window) : Level(Window)
 {
     this->Window = Window;
     iState = 5;
     levelState = 1;
 }
 
-GameState::~GameState()
+LevelTest::~LevelTest()
 {
     //dtor
 }
 
-int GameState::Run()
+int LevelTest::Run()
 {
     PollEvent();
     Update();
     Render();
-    iState = 5;
     return iState;
 }
 
-void GameState::PollEvent()
+void LevelTest::PollEvent()
 {
     sf::Event event;
     sf::Keyboard keyboard;
@@ -36,13 +35,13 @@ void GameState::PollEvent()
     }
 }
 
-void GameState::Update()
+void LevelTest::Update()
 {
 
 }
 
-void GameState::Render()
+void LevelTest::Render()
 {
-    Window->clear(sf::Color(223, 42, 180));
+    Window->clear(sf::Color(0,0,0));
     Window->display();
 }

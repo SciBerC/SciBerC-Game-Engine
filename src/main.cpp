@@ -5,17 +5,22 @@ int main()
 {
     sf::RenderWindow Window(sf::VideoMode(800, 600), "SciBerC Game Engine!", sf::Style::Close);
 
-    int State = 3;
+    int State = 2;
+    int levelState = 1;
 
+    // States
     SC::GameState Game(&Window);
     SC::MenuState Menu(&Window);
+
+    // Levels
+    SC::LevelTest levelOne(&Window);
 
     while (Window.isOpen())
     {
         switch (State)
         {
             case 0:
-                return EXIT_SUCCESS;
+                return EXIT_FAILURE;
             break;
 
             case 1: // Loading Screen
@@ -28,11 +33,23 @@ int main()
 
             case 3: // Game Screen
                 Game.iState = State;
+                levelState = Game.levelState;
                 State = Game.Run();
             break;
 
             case 4: // Pause Screen
-                break;
+            break;
+
+            case 5: // Level Section
+                switch(levelState)
+                {
+                    case 1:
+                        levelOne.iState = State;
+                        levelState = Game.levelState;
+                        State = levelOne.Run();
+                    break;
+                }
+            break;
         }
     }
     return EXIT_SUCCESS;
