@@ -1,3 +1,16 @@
+Version 0.12 | | Release Date 4/6/2012
+=====================================
+		// Files: Name.type
+Added - Files: Level.cpp, level.h, LevelTest.cpp, LevelTest.hpp.
+		// Folders: Directory/dir
+		Folders: include/Levels and src/Levels.
+		// Features: File.type - Feature // Comment about it.
+		Features:
+		
+		// Note the Level classes are virtually the same State
+Removed
+Modified - Files: Main.cpp, main.h, GameState.cpp, GameState.hpp.
+
 Version 0.1 | | Release Date 3/6/2012
 =====================================
 		// Files: Name.type
