@@ -4,6 +4,7 @@
 int main()
 {
     sf::RenderWindow Window(sf::VideoMode(800, 600), "SciBerC Game Engine!", sf::Style::Close);
+    Window.setFramerateLimit(60);
 
     int State = 2;
     int levelState = 1;
@@ -48,7 +49,13 @@ int main()
                         levelState = Game.levelState;
                         State = levelOne.Run();
                     break;
+                    default:
+                        return EXIT_FAILURE;
+                    break;
                 }
+            break;
+            default:
+                return EXIT_FAILURE;
             break;
         }
     }
