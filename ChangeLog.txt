@@ -1,3 +1,16 @@
+Version 0.13 | | Release Date 4/6/2012
+=====================================
+		// Files: Name.type
+Added - Files: Object.cpp, Object.hpp, Ball.cpp, Ball.hpp, redBall.png, blueBall.png.
+		// Folders: Directory/dir
+		Folders: include/Objects, src/Objects and media/images.
+		// Features: File.type - Feature // Comment about it.
+		Features:
+			Objects has Speed, Position, Texture, Sprite and isSolid.
+			
+Removed
+Modified - Files: LevelTest has been modified to display objects..
+
 Version 0.12 | | Release Date 4/6/2012
 =====================================
 		// Files: Name.type
