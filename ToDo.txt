@@ -1,4 +1,4 @@
-﻿TODO List, Created on the 3/6/2012
+﻿TODO List, Created on the 4/6/2012
 
 Main			- Check State ✗
 				- Loading State ✗
@@ -27,11 +27,11 @@ Level : State ✓
 
 LevelTest : Level ✓
 
-Object			- Position ✗
-				- Speed ✗
+Object			- Position ✓
+				- Speed ✓
 				- Velocity ✗
-				- Texture ✗
-				- Solid ✗
+				- Texture ✓
+				- Solid ✓
 			
 ObjectManager 	- ObjectList ✗
 
